@@ -1,0 +1,168 @@
+.wrapper-menu {
+    min-height: 764px;
+    height: 100vh;
+    //временная ширина 320
+    width: 320px;
+    background-color: #fff;
+    //отключить на десктопе
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+    
+}
+
+
+//=========================================================
+
+.modal__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 100%;
+    max-height: 1000px;
+}
+
+.modal__header {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.modal__header-columns {
+    display: flex;
+    column-gap: 17px;
+    flex: 1 0 auto;
+}
+
+
+
+
+.modal__main {
+    flex: 1 1 33.333333%;
+}
+
+
+
+
+
+
+
+
+
+.modal__nav {
+    flex-grow: 1;
+}
+
+.modal__nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1 1 12.5%;
+    height: 450px;
+}
+
+
+.modal__nav-item--active {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url("../img/title-icon.svg");
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        left: -16px;
+        top: -5px;
+        transform: scale(1);
+        opacity: 1;
+        transition-duration: 0.1s;
+    }
+
+    & .modal__nav-link {
+        opacity: 0.6;
+    }
+}
+
+
+
+.modal__nav-link {
+    display: block;
+    color: #1B1C21;
+    font-weight: 500;
+    transition-duration: 0.2s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+
+
+
+
+.modal__footer {
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+
+.modal__footer-feedback {
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+    row-gap: 16px;
+}
+
+.modal__footer-actions {
+    display: flex;
+    column-gap: 16px;
+}
+
+.modal__footer-mail {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #1B1C21;
+}
+
+.modal__footer-tel {
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #1B1C21;
+    letter-spacing: -0.6px;
+}
+
+.language {
+    display: flex;
+    column-gap: 7px;
+}
+
+.language__item {
+    text-transform: uppercase;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #1B1C21;
+
+    transition-duration: 0.1s;
+
+    &:hover {
+        transform: scale(0.98);
+        opacity: 0.6;
+    }
+}
+
+.language__item--active {
+    opacity: 0.6;
+}

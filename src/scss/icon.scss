@@ -1,0 +1,8 @@
+.icon {
+    transition-duration: 0.2s;
+    &:hover {
+        filter: drop-shadow(0px 0px 5px #FF3E78);
+    }
+}
+
+//добавить в "Хедере" при наведении на лейбл ховер

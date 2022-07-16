@@ -45,9 +45,9 @@
 
 }
 
-.about-us__text {
-margin-bottom: 20px;
-}
+//.about-us__text {
+//margin-bottom: 20px;
+//}
 
 @media (min-width: 768px) {
 
@@ -65,7 +65,7 @@ margin-bottom: 20px;
     
     .about-us__overflow {
         max-width: auto;
-        max-height: 150px;
+        height: 160px;
         overflow: hidden;
     }
     

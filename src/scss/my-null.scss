@@ -1,11 +1,11 @@
 html,
 body {
-    //height: 100%;
-    //line-height: ;
-    //font-size: ;
-    //background-color: ;
-    //font-family: ;
-    //color:
+    height: 100%;
+    line-height: $standartLineH;
+    font-size: $standartRem;
+    background-color: $background-corol--main;
+    font-family: $font-family;
+    color: $difTextColor;
     box-sizing: border-box;
 }
 
@@ -17,6 +17,11 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
