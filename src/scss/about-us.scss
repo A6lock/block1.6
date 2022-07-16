@@ -1,0 +1,101 @@
+.about-us {
+    font-family: 'TT Lakes';
+    font-size: 0.9rem;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-us__container {
+    padding: 0 16px;
+    min-width: 289px;
+}
+
+.about-us__overflow {
+    margin-bottom: 15px;
+}
+
+.about-us__photo-cps {
+    
+    width: 320px;
+    height: 176px;
+    object-fit: cover;
+}
+
+.about-us__button {
+    font-family: 'TT Lakes';
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 14px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 11px;
+        background-image: url(../img/check-down_icon.svg);
+        vertical-align: center;
+        margin: 0 13px 0 10px;
+    }
+
+}
+
+.about-us__text {
+margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+    .about-us {
+        flex-direction:row;
+        flex: 1 1 50%;
+        justify-content: space-between;
+        align-content: center;
+        column-gap: 36px;
+    }
+    
+    .about-us__container {
+        padding: 0 0 0 20px;
+    }
+    
+    .about-us__overflow {
+        max-width: auto;
+        max-height: 150px;
+        overflow: hidden;
+    }
+    
+    .about-us__photo-container {
+        padding-right: 25px;
+    }
+    
+    .about-us__photo-cps {
+        
+        width: 360px;
+        height: 208px;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+  .about-us__container {
+    padding: 0 0 0 20px;
+}
+
+.about-us__photo-cps {
+
+    width: 531.35px;
+    height: 307px;
+
+}
+
+.about-us__container {
+    padding: 0 0 0 31px;
+}
+
+}

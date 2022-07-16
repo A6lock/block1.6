@@ -1,0 +1,44 @@
+.forms__text {
+    display: none;
+}
+
+.forms {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.forms__repair {
+    position: relative;
+    margin-left: 20px;
+    &::before {
+        position: absolute;
+        content: '';
+        background: #EAEAEA;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        left: -20px;
+        top: 9%;
+    }
+}
+
+.forms__text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (min-width: 1120px) {
+    
+    .forms__repair {
+        margin-left: 0;
+        &::before {
+            display: none;
+        }
+    }
+
+    .forms__text {
+        display: block;
+    }
+    
+}
