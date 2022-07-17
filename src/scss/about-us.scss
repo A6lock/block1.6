@@ -20,8 +20,10 @@
 }
 
 .about-us__photo-cps {
-    
+    display: block;
+    margin: auto;
     width: 320px;
+    //max-width: 531px;
     height: 176px;
     object-fit: cover;
 }

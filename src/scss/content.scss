@@ -1,5 +1,8 @@
 .content {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 320px;
+    min-width: 320px;
+    width: 1120px;
+    z-index: 1;
 }

@@ -28,7 +28,7 @@
     font-weight: $fontRegular;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
     
     .forms__repair {
         margin-left: 0;
@@ -39,6 +39,11 @@
 
     .forms__text {
         display: block;
+    }
+
+    .head__forms--hidden {
+        display: flex;
+        column-gap: 32px;
     }
     
 }

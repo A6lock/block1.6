@@ -1,7 +1,13 @@
 .wrapper {
+    position: relative;
     min-height: 100%;
-    max-width: 1426px;
+    max-width: 1120px;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
+    
+    @media (min-width: 1366px) {
+        max-width: 1426px;
+    }
 }
