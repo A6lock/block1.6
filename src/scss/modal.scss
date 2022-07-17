@@ -1,4 +1,4 @@
-.modal {
+.modal-menu {
     position: relative;
     display: none;
     position: fixed;
@@ -41,7 +41,7 @@
 
 //=========================================================
 
-.modal__menu {
+.modal-menu__menu {
     padding-top: 34px;
     display: flex;
     flex-direction: column;
@@ -53,19 +53,19 @@
     max-height: 1000px;
 }
 
-.modal__header {
+.modal-menu__header {
     margin-top: 18px;
     display: flex;
     align-items: center;
 }
 
-.modal__header-columns {
+.modal-menu__header-columns {
     display: flex;
     column-gap: 17px;
     flex: 1 0 auto;
 }
 
-.modal__btn-close {
+.modal-menu__btn-close {
     @media (min-width: 1366px) {
         display: none;
     }
@@ -73,15 +73,15 @@
 
 
 
-.modal__main {
+.modal-menu__main {
     flex: 1 1 33.333333%;
 }
 
-.modal__nav {
+.modal-menu__nav {
     flex-grow: 1;
 }
 
-.modal__nav-items {
+.modal-menu__nav-items {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -90,7 +90,7 @@
 }
 
 
-.modal__nav-item--active {
+.modal-menu__nav-item--active {
     display: inline-block;
     position: relative;
 
@@ -107,14 +107,14 @@
         transition-duration: 0.1s;
     }
 
-    & .modal__nav-link {
+    & .modal-menu__nav-link {
         opacity: 0.6;
     }
 }
 
 
 
-.modal__nav-link {
+.modal-menu__nav-link {
     display: block;
     color: #1B1C21;
     font-weight: 500;
@@ -129,7 +129,7 @@
 
 
 
-.modal__footer {
+.modal-menu__footer {
     display: flex;
     row-gap: 40px;
     flex-direction: column;
@@ -137,19 +137,19 @@
 }
 
 
-.modal__footer-feedback {
+.modal-menu__footer-feedback {
     display: flex;
     flex-direction: column;
     width: 196px;
     row-gap: 16px;
 }
 
-.modal__footer-actions {
+.modal-menu__footer-actions {
     display: flex;
     column-gap: 16px;
 }
 
-.modal__footer-mail {
+.modal-menu__footer-mail {
     font-family: 'TT Lakes';
     font-size: 16px;
     line-height: 24px;
@@ -158,7 +158,7 @@
     color: #1B1C21;
 }
 
-.modal__footer-tel {
+.modal-menu__footer-tel {
     font-family: 'TT Lakes';
     font-size: 24px;
     line-height: 32px;
