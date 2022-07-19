@@ -1,5 +1,12 @@
 .modal-call {
+    visibility: hidden;
     transform: translateX(120%);
+    transition: all 2ms ease;
+}
+
+.modal-call--active {
+    visibility: visible;
+    transform: translateX(0%);
 }
 
 .modal-call__title {
