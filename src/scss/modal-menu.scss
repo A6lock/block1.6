@@ -1,17 +1,18 @@
 .modal-menu {
-    position: relative;
-    display: none;
-    position: fixed;
-    display: block;
+    //position: relative;
+    //display: none;
+    //position: fixed;
+    //display: block;
     z-index: 10;
     transform: translateX(-120%);
+    transition: all 0.3s ease;
 
 
 
         @media (min-width: 1366px) {
             position: static;
             display: block;
-            left: 0%;
+            transform: translateX(0);  
             z-index: 1;
         }
 }
@@ -37,10 +38,10 @@
     //    left: -120%;
     //}
 
-    //@media (min-width: 1366px) {
-    //box-shadow: none;
+    @media (min-width: 1366px) {
+    box-shadow: none;
     //left: 0%;
-    //}
+    }
 }
 
 

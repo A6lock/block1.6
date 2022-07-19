@@ -3,12 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.modal-menu');
   const menuClose = menu.querySelector('.modal-menu__btn-close');
 
-
-  menuOpen.addEventListener('click', () => {
+  const openMenu = function () {
     menu.classList.add('modal-menu--active');
-  });
+  };
 
-  menuClose.addEventListener('click', () => {
+  const closeMenu = function () {
     menu.classList.remove('modal-menu--active');
-  });
+  };
+
+  menuOpen.addEventListener('click', openMenu, false);
+
+  menuClose.addEventListener('click', closeMenu, false);
 });
